@@ -1,0 +1,98 @@
+﻿@keyframes akkordeon{
+	0%{height:0;}
+	100%{height:736px;}
+}
+.smart_body_block>img{
+	width:66%;
+	align-self:self-end;
+}
+
+body{
+	display:flex;
+	flex-flow: column nowrap;
+	min-height:100%;
+}
+/*-------------------------------desktop_body------------------------*/
+.desktop_body{
+	flex-flow:column nowrap;
+	align-items:center;
+}
+.desktop_body_block{
+	width:100%;
+	position:relative;
+}
+
+.desktop_body_block:first-child{
+	height:200px;
+	display:block;
+}
+
+.desktop_body_block h1{
+	position:absolute;
+	margin:auto;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	z-index:2;
+}
+
+.desktop_body_block img{
+	height:200px;
+	width:450px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:1;
+}
+
+.desktop_body_block:nth-child(2){
+	animation:akkordeon 1s ease-out;
+	line-height:2;
+}
+
+.desktop_body_block ul li{
+	font-size:22px;
+}
+.zaglushka{
+	flex:1;
+}
+
+.desktop_body span{
+	text-shadow:0 0 7px #7cacfc,
+	0 0 2px #c496ca,
+	0 0 4px #c496ca,
+	0 0 8px #c496ca,
+	0 0 16px #c496ca;
+}
+
+.desktop_body_block li:before{
+	width:30px;
+	height:30px;
+	top:0;
+	left:-30px;
+}
+
+.desktop_body_block ul{
+	margin:0 0 0 40px;
+}
+
+/*---адаптив медиазапросы---*/
+
+@media (max-width:640px){
+	.main_menu{
+		display:flex; //появляется меню в столбик для смартфонов
+	}
+	.main_menu_table{
+		display:none; //исчезает меню для больших экранов
+	}
+	.desktop_body{
+		display:none; //исчезает боди для больших экранов
+	}
+	.container{
+		margin:45px auto 0;
+	}
+	.smart_body{
+		display:flex; //появляется боди для смартфонов
+	}
+}
+/*---------------------------------------------------------*/
