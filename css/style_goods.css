@@ -1,5 +1,9 @@
 ﻿/*-------------------------------desktop_body------------------------*/
 
+.desktop_body{
+	margin-bottom: 0px;
+}
+
 .desktop_body_block:first-child{
 	height:150px;
 	position:relative;
@@ -58,6 +62,9 @@
 	}
 	.smart_body{
 		display:flex; //появляется боди для смартфонов
+	}
+	img{
+		border-radius: 25px;
 	}
 }
 /*---------------------------------------------------------*/

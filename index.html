@@ -62,7 +62,7 @@
 <!------------------------------тело для больших экранов-------------------------------->
 		<div class="main_grid">
 			<div class="a">
-				<div class="block_hor">
+				<div class="block_hor" id = "aboutUs" onclick = "getAboutUs();">
 					<div class="block1_hor"><img class="about_img" src="img/about.png"><div>О нас</div></div>
 					<div class="block2_hor"><p><span>"Центр зрения"</span> - это салон оптики в <span>Боровичах</span>, где вы сможете 
 								<span>подобрать оправу</span> на свой вкус,
@@ -76,7 +76,7 @@
 			</div>
 			<div class="b"></div>
 			<div class="c">
-				<div class="block_vert">
+				<div class="block_vert" id = "open1" onclick = "getOpen();">
 					<div class="block1_vert"><img class="open_img" src="img/open.png"><div>Режим работы</div></div>
 					<div class="block2_vert">
 						<ul>
@@ -95,7 +95,7 @@
 			<div class="e"></div>
 			<div class="f"></div>
 			<div class="g">
-				<div class="block_vert">
+				<div class="block_vert" id = "map" onclick = "getMap();">
 					<div class="block1_vert"><img class="geolocation_img" src="img/geolocation.png"><div>Как нас найти</div></div>
 					<div class="block2_vert">
 						<div class="map" style="width:100%; height:100%;"><div style="position:relative;overflow:hidden; width:100%; height:100%;"><a href="https://yandex.ru/maps/10906/borovichy/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Боровичи</a><a href="https://yandex.ru/maps/10906/borovichy/house/ulitsa_9_yanvarya_15/Z0oYfwZjTUQDQFtifX94cXhqZg==/?ll=33.913461%2C58.390464&utm_medium=mapframe&utm_source=maps&z=19.13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица 9 Января, 15 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJeVVYKA" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div>
@@ -107,7 +107,7 @@
 			<div class="j"></div>
 			<div class="k"></div>
 			<div class="l">
-				<div class="block_hor">
+				<div class="block_hor" id = "contacts" onclick = "getContacts();">
 					<div class="block1_hor"><img class="contacts_img" src="img/contacts.png"><div>Контакты</div></div>
 					<div class="block2_hor">
 						<div class="phone_us"><a class="a_contacts" href="tel:+79217382512" target="_blank">+7(921)738-2512</a></div>
@@ -149,7 +149,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="smart_body_block">
+			<div class="smart_body_block" id = "geo">
 				<img src="img/geolocation.png">
 				<h2>Как нас найти</h2>
 				<p>Боровичи, ул. 9 января, 15 (вход со двора)</p>
@@ -169,5 +169,6 @@
 	<footer>
 		Верстка 2022 Максим Росляков<br>+7(911)604-3252
 	</footer>
+	<script src = "js/index.js"></script>
 </body>
 </html>

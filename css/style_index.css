@@ -1,5 +1,5 @@
 ﻿:root{
---lightblue:#7cacfc;
+--lightblue:radial-gradient(at top right, #0588ff, #8be5f7);
 }
 /*----------------animation------------------------*/
 @keyframes flicker{
@@ -25,7 +25,7 @@
 	display:flex;
 	max-width:1200px;
 	flex-flow:column nowrap;
-	margin:0 auto;
+	margin:0 auto 10px;
 }
 
 .banner{
@@ -36,6 +36,9 @@
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 5px 1px grey;
 }
 
 h1{
@@ -50,7 +53,6 @@ h1{
 	display:grid;
 	width:100%;
 	height:746px;
-	margin-top:10px;
 	grid-template-columns:33% 33% 1% 33%;
 	grid-template-rows:32% 2% 32% 2% 32%;
 	grid-template-areas:
@@ -80,15 +82,16 @@ h1{
 .c{
 	grid-area:c;
 }
-/*-------------------animated block vertical-----------------*/
 
-.c:hover .block_vert{
-	transform:rotatey(180deg);
-	transition:0.5s;
+
+.g{
+	grid-area:g;
 }
 
-.g:hover .block_vert{
-	transform:rotatey(180deg);
+/*-------------------animated block vertical-----------------*/
+
+.block_vert:hover{
+	cursor:pointer;
 	transition:0.5s;
 }
 
@@ -99,7 +102,6 @@ h1{
 	width:100%;
 	height:100%;
 	transition:0.5s;
-	will-change: transform;
 }
 
 .block_vert>div{
@@ -111,10 +113,12 @@ h1{
 	align-items:center;
 	position:absolute;
 	transform-origin:center center;
+	border-radius: 25px;
+	box-shadow: 0 0 5px 1px grey;
 }
 
 .block1_vert{
-	background:#7cacfc;
+	background:radial-gradient(at top right, #0588ff, #8be5f7);
 	display:flex;
 	flex-flow:column nowrap;
 	juustify-content:center;
@@ -135,7 +139,7 @@ h1{
 
 .block2_vert{
 	transform: translateZ(-1px) rotateY(180deg);
-	background:#c496ca;
+	background:radial-gradient(at top right, #0588ff, #8be5f7);
 	overflow:hidden;
 }
 /*-------------------------------------------*/
@@ -145,12 +149,12 @@ h1{
 
 /*-------------------animated block horizontal-----------------*/
 .a:hover .block_hor{
-	transform:rotateX(180deg);
+	cursor:pointer;
 	transition:0.5s;
 }
 
 .l:hover .block_hor{
-	transform:rotateX(180deg);
+	cursor:pointer;
 	transition:0.5s;
 }
 
@@ -172,10 +176,12 @@ h1{
 	align-items:center;
 	position:absolute;
 	transform-origin:center center;
+	border-radius: 25px;
+	box-shadow: 0 0 5px 1px grey;
 }
 
 .block1_hor{
-	background:#7cacfc;
+	background:radial-gradient(at top right, #0588ff, #8be5f7);
 	display:flex;
 	flex-flow:column nowrap;
 	justify-content:center;
@@ -185,7 +191,7 @@ h1{
 
 .block2_hor{
 	transform: translateZ(-1px) rotateY(180deg) rotateZ(180deg);
-	background:#c496ca;
+	background:radial-gradient(at top right, #0588ff, #8be5f7);
 	display:flex;
 	flex-flow:column nowrap;
 	justify-content:space-evenly;
@@ -246,9 +252,6 @@ h1{
 	transform-origin:center center;
 }
 
-.g{
-	grid-area:g;
-}
 .h{
 	grid-area:h;
 	display:flex;
@@ -268,7 +271,6 @@ h1{
 
 .l{
 	grid-area:l;
-	overflow:hidden;
 }
 
 .a_contacts{
@@ -331,6 +333,10 @@ h1{
 	width:33%;
 }
 
+#geo{
+	overflow:hidden;
+}
+
 .phone_us_smart{
 	display:flex;
 	align-items:center;
@@ -378,7 +384,7 @@ h1{
 	height:30px;
 	background:url(../img/vk.png);
 	background-size:contain;
-	filter:saturate(200%);
+	filter:saturate(500%);
 }
 
 .vk_smart:hover:before{

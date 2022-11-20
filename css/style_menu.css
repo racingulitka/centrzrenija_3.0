@@ -63,11 +63,14 @@
 	display:flex;
 	background:#0b6ef0;
 	flex-flow:row nowrap;
-	width:100%;
+	max-width:1200px;
 	justify-content:center;
 	align-items:center;
 	position:relative;
 	height:50px;
+	border-radius: 25px;
+	margin: 10px auto;
+	box-shadow: 0 0 5px 1px grey;
 }
 	/*пункты основного меню*/
 .main_menu_table>li{

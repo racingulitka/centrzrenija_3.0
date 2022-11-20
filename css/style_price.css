@@ -12,10 +12,16 @@ body{
 	flex-flow: column nowrap;
 	min-height:100%;
 }
+
+.smart_body > div:first-child{
+	padding:0;
+	overflow:hidden;
+}
 /*-------------------------------desktop_body------------------------*/
 .desktop_body{
 	flex-flow:column nowrap;
 	align-items:center;
+	margin-bottom: 0px;
 }
 .desktop_body_block{
 	width:100%;

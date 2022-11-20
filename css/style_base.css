@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6{
 
 /*--------------------основные стили---------------------*/
 :root{
---lightblue:#7cacfc;
+--lightblue:radial-gradient(at top right, #0588ff, #8be5f7);
 }
 
 html{
@@ -65,10 +65,11 @@ html{
 	flex-flow:column nowrap;
 	align-items:center;
 	width:calc(100% - 10px);
-	margin:5px 5px 0 5px;
+	margin:0px auto 10px;
 	padding:5px;
 	background:var(--lightblue);
-	border-radius:2px;
+	border-radius:25px;
+	box-shadow:0 0 5px 1px grey;
 }
 
 h2{
@@ -146,12 +147,13 @@ h2{
 	flex-flow:row wrap;
 	justify-content:center;
 	max-width:1200px;
-	margin:0 auto;
+	margin:0 auto 10px;
 	overflow:hidden;
 }
 
 .desktop_body_block>img{
 	width:100%;
+	border-radius: 25px;
 }
 
 .desktop_body_block div{
@@ -163,10 +165,12 @@ h2{
 	flex-flow:column nowrap;
 	align-items:center;
 	width:590px;
-	margin:5px;
+	margin:0px 5px 10px;
 	padding:5px;
 	background:var(--lightblue);
-	border-radius:2px;
+	border-radius:25px;
+	overflow: hidden;
+	box-shadow: 0 0 5px 1px grey;
 }
 
 
@@ -208,11 +212,14 @@ h2{
 
 /*-------------------------------подвал------------------------------*/
 footer{
-	margin:5px 0 0 0;
-	width:100%;
+	margin:0px auto 10px;
+	width: 100%;
+	max-width:1200px;
 	height:30px;
 	background:#0b6ef0;
 	color:white;
 	font-size:12px;
 	text-align:center;
+	box-shadow: 0 0 5px 1px grey;
+	border-radius: 25px;
 }

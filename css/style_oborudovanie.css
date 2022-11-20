@@ -20,19 +20,20 @@ body{
 .desktop_body{
 	flex-flow:column nowrap;
 	align-items:center;
-	
 }
 
 .desktop_body_block_header{
 	width:100%;
 	height:102px;
-	margin:5px;
+	margin:0px 0px 10px;
 	background:var(--lightblue);
 	border-radius:2px;
 	display:flex;
 	flex-flow:row wrap;
 	justify-content:center;
 	align-items:center;
+	border-radius: 25px;
+	box-shadow: 0 0 5px 1px grey;
 }
 
 .desktop_body_block{
@@ -71,7 +72,7 @@ body{
 
 .wrapper_bottom>div{
 	position:absolute;
-	background:#7cacfc;
+	background:linear-gradient(to top, #0588ff, #8be5f7);
 	width:100%;
 	height:800px;
 	border:1px solid black;
@@ -90,7 +91,7 @@ body{
 	width:25%;
 	height:100%;
 	border-radius:15px 15px 0 0;
-	background:#7cacfc;
+	background:linear-gradient(to bottom, #0588ff, #8be5f7);
 	text-align:center;
 	border:1px solid black;
 	transition:0.2s;
@@ -106,7 +107,7 @@ body{
 	top:28px;
 	left:0;
 	z-index:1;
-	background:#7cacfc;
+	background:#8be5f7;
 }
 
 #label_1{
@@ -227,6 +228,9 @@ body{
 	}
 	.smart_body{
 		display:flex; //появляется боди для смартфонов
+	}
+	img {
+		border-radius:25px;
 	}
 }
 
