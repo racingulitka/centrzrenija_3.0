@@ -58,6 +58,10 @@ body{
 	text-shadow:0 0 2px #0b6ef0, 0 0 4px #0b6ef0, 0 0 6px #0b6ef0;
 }
 
+#anna{
+	border-radius: 25px;
+}
+
 /*---адаптив медиазапросы---*/
 
 @media (max-width:640px){
