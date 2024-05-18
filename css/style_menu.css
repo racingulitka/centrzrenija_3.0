@@ -95,3 +95,100 @@
 		    0 0 151px #c496ca;
 }
 
+﻿/*--------------Меню для смартфонов------------------*/
+
+.main_menu{
+	display:none;
+	background:#0b6ef0;
+	flex-flow:column nowrap;
+	width:80px;
+	height:40px;
+	justify-content:center;
+	position:fixed;
+	z-index:10;
+	top:0;
+	left:0;
+	opacity:85%;
+	border-radius:5px;
+}
+	/*пункты основного меню*/
+.main_menu>li{
+	color:white;
+	text-shadow:1px 1px 3px black;
+	font-size:20px;
+	font-weight:500;
+	padding:5px 20px 0px 15px;
+	position:relative;
+}
+
+.main_menu>li a{
+	display:block;
+	width:100%;
+}
+
+	/*выпадающая часть меню до ховера*/
+.main_menu>li ul{
+	width:300px;
+	height:0px;
+	font-size:16px;
+	position:fixed;
+	transition:0.3s;
+	z-index:2;
+	margin-top:10px;
+	overflow:hidden;
+}
+	/*выпадающая часть меню после ховера*/
+.main_menu>li:hover ul{
+	transition:0.3s;
+	width:300px;
+	height:272px;
+	background:#0b6ef0;
+	font-size:16px;
+}
+	/*пункты выпадающего меню*/
+.main_menu>li li{
+	font-size:30px;
+	font-weight:400;
+	padding:5px;
+	overflow:hidden;
+	border-top:1px solid #c496ca;
+}
+
+/*--------------Меню для больших экранов------------------*/
+
+.main_menu_table{
+	display:flex;
+	background:#0b6ef0;
+	flex-flow:row nowrap;
+	max-width:1200px;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	height:50px;
+	border-radius: 25px;
+	margin: 10px auto;
+	box-shadow: 0 0 5px 1px grey;
+}
+	/*пункты основного меню*/
+.main_menu_table>li{
+	display:block;
+	color:white;
+	text-shadow:1px 1px 3px black;
+	font-size:20px;
+	font-weight:500;
+	padding:2px 10px;
+	position:relative;
+}
+
+	/*Ховеры основного меню*/
+.main_menu_table>li:hover{
+	text-shadow:0 0 7px #f996ca,
+		    0 0 10px #f996ca,
+		    0 0 21px #f996ca,
+		    0 0 42px #c496ca,
+		    0 0 82px #c496ca,
+		    0 0 92px #c496ca,
+		    0 0 102px #c496ca,
+		    0 0 151px #c496ca;
+}
+

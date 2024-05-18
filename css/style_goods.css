@@ -67,4 +67,73 @@
 		border-radius: 25px;
 	}
 }
+﻿/*-------------------------------desktop_body------------------------*/
+
+.desktop_body{
+	margin-bottom: 0px;
+}
+
+.desktop_body_block:first-child{
+	height:150px;
+	position:relative;
+}
+
+#h1desktop{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+}
+
+.desktop_body_block{
+	height:initial;
+}
+
+.header{
+	width:100%;
+}
+
+#header_image1{
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:50%;
+	left:0;
+	transform:translate(0, -50%)
+}
+
+#header_image2{
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translate(0, -50%)
+}
+
+/*-------------------------------------------------------------------*/
+
+/*---адаптив медиазапросы---*/
+
+@media (max-width:640px){
+	.main_menu{
+		display:flex; //появляется меню в столбик для смартфонов
+	}
+	.main_menu_table{
+		display:none; //исчезает меню для больших экранов
+	}
+	.desktop_body{
+		display:none; //исчезает боди для больших экранов
+	}
+	.container{
+		margin:45px auto 0;
+	}
+	.smart_body{
+		display:flex; //появляется боди для смартфонов
+	}
+	img{
+		border-radius: 25px;
+	}
+}
 /*---------------------------------------------------------*/
