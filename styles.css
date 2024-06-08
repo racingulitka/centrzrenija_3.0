@@ -17,6 +17,7 @@ body{
 main{
 
 	width:min(1920px, 100vw);
+	overflow-x: hidden;
 	height:auto;
 	font-family:inter;
 	font-size:49px;

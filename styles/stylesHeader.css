@@ -31,7 +31,6 @@ header{
 	left:50%;
 	translate:-50% 0;
 	z-index:10;
-	overflow: hidden;
 }
 
 .header-hamburgerIcon{
