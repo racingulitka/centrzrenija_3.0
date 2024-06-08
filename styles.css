@@ -1,0 +1,43 @@
+﻿:root{
+	--mainHeaderColor:#fff;
+	--mainHeaderFontSize: 4rem;
+}
+
+body{
+	width:100vw;
+	height:auto;
+	min-height:100vh;
+	background:#04b4f7;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+main{
+
+	width:min(1920px, 100vw);
+	height:auto;
+	font-family:inter;
+	font-size:49px;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:center;
+	gap:100px;
+}
+
+h2{
+	color:var(--mainHeaderColor);
+	font-size:var(--mainHeaderFontSize);
+    	font-family: 'SpaceAge';
+	opacity:0;
+	translate:0% -100%;
+	transition:1s;
+}
+
+@media(max-width:768px){
+	h2{
+		font-size:8vw;
+	}
+}

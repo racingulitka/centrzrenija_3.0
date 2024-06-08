@@ -1,0 +1,109 @@
+﻿@keyframes buttonAnimation{
+	0%{left:-50%;}
+	10%{left:150%;}
+	100%{left:150%;}
+}
+
+.contacts{
+	padding:50px 50px 100px;
+	width:100%;
+	height:auto;
+	position:relative;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
+
+.contacts-container{
+	margin:100px 0;
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-around;
+	align-items:center;
+	gap:50px;
+}
+
+.contacts-container-tel{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex-start;
+	align-items:center;
+	gap: 10px;
+}
+
+.contacts-container-button{
+	width:auto;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
+	border:2px solid #fff;
+	border-radius:3px;
+	background:transparent;
+	font-weight:600;
+	position:relative;
+	overflow:hidden;
+	color:var(--mainFontColor);
+}
+
+.contacts-container-button:before{
+	content:'';
+	position:absolute;
+	top:0px;
+	left:-50%;
+	width:50%;
+	height:100%;
+	background:linear-gradient(90deg, transparent, #fff, transparent);
+	transform:skew(-20deg);
+	animation:buttonAnimation 4s ease-in-out infinite;
+}
+
+.contacts-container-button:hover{
+	background:var(--mainFontColor);
+	color:var(--mainBackground);
+	transition:0.3s ease-in-out;
+	cursor:pointer;
+}
+
+.contacts-container-map{
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:flex-start;
+	gap:50px;
+}
+
+.map{
+	width:500px;
+	height:300px;
+}
+
+.contacts-container-map-textBlock{
+	width:500px;
+	height:auto;
+}
+
+.contacts-container-map-textBlock-title{
+	font-size:30px;
+}
+
+.contacts-container-map-textBlock-text{
+	margin:10px 0 0 0;
+}
+
+@media(max-width:600px){
+	.contacts{
+		padding:50px 10px 0px;
+	}
+	.contacts-container-tel{
+		justify-content:center;
+	}
+	.map{
+		width:280px;
+	}
+}

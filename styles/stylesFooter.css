@@ -1,0 +1,111 @@
+﻿:root{
+	--mainBackground: #04b4f7;
+}
+
+footer{
+	width:min(1920px, 100vw);
+	min-height:80px;
+	height:auto;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	align-items:flex-start;
+	padding:5px 15px;
+	background:var(--mainBackground);
+}
+
+.footer-common{
+	width:230px;
+	height:auto;
+	padding:10px 30px;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
+
+.footer-common > p{
+	font-size:12px;
+	line-height:150%;
+}
+
+.footer-contacts{
+	flex:1 0 auto;
+	height:auto;
+	padding:10px 30px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:30px;
+	
+}
+
+.svgLink{
+	position:relative;
+	z-index:2;
+	overflow:hidden;
+}
+
+.svgLink:before{
+	content:'';
+	width:40px;
+	height:40px;
+	position:absolute;
+	z-index:1;
+	top:5px;
+	left:5px;
+	background:#fff;
+	transform-origin:top center;
+	transform:scaleY(0);
+	transition:0.8s;
+}
+
+.svgLink:hover:before{
+	transform:scaleY(1);
+	transition:0.8s;
+}
+
+.svgLink:hover .SVG{
+	fill:var(--mainBackground);
+	transition:0.8s;
+}
+
+.SVG{
+	width:50px;
+	height:auto;
+	fill:white;
+	position:relative;
+	z-index:2;
+	transition:0.8s;
+}
+
+.footer-ipInfo{
+	max-width:270px;
+	height:auto;
+	padding:10px 30px;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
+
+.footer-ipInfo > p{
+	font-size:12px;
+	line-height:150%;
+}
+
+@media(max-width:768px){
+	footer{
+		flex-flow:column nowrap;
+		justify-content:flex-start;
+		row-gap:10px;
+		flex-direction:column-reverse;
+		align-items:center;
+	}
+	.footer-common{
+		align-items:center;
+	}
+	.footer-ipInfo{
+		align-items:center;
+	}
+}
