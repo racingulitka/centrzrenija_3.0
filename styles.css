@@ -17,7 +17,6 @@ body{
 main{
 
 	width:min(1920px, 100vw);
-	overflow-x: hidden;
 	height:auto;
 	font-family:inter;
 	font-size:49px;
@@ -26,6 +25,7 @@ main{
 	justify-content:flex-start;
 	align-items:center;
 	gap:100px;
+	overflow:hidden;
 }
 
 h2{

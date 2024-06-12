@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang='ru'>
 
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="assets/favicon.png">
+	<link rel="icon" href="assets/favicon.webp">
 	<link rel="stylesheet" href="styles/stylesZeroing.css">
 	<link rel="stylesheet" href="styles/stylesFonts.css">
 	<link rel="stylesheet" href="styles/stylesHeader.css">
@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="stylesEquipment.css">
 	<link rel="stylesheet" href="stylesPrice.css">
 	<link rel="stylesheet" href="stylesContacts.css">
-	<meta name="description" content="Прием ведет врач офтальмолог – Ханнанова Анна Николаевна. Купить очки в Боровичах можно у нас: низкие цены, большой выбор оправ, готовых очков и аксессуаров. Окулист подберет очки любой сложности">
-	<title>Центр зрения Боровичи, детский врач офтальмолог, окулист</title>
+	<link rel="stylesheet" href="stylesReviews.css">
+	<meta name="description" content="Врач-офтальмолог Ханнанова Анна Николаевна приглашает вас на консультацию в 'Центр зрения', опытный окулист поможет подобрать оптику по привлекательным ценам в городе Боровичи Новгородской области">
+	<title>Офтальмолог в городе Боровичи: консультация окулиста в "Центре зрения"</title>
 	<meta name="yandex-verification" content="f27d5177c3d1e22f">
 </head>
 <body>
@@ -40,38 +41,39 @@
 	<header>
 		<div class='header-hamburgerIcon' onClick='onHamburgerClick()'>
 			<div id='stick1' class='header-hamburgerIcon-stick'></div>
-			<div id='stick2'class='header-hamburgerIcon-stick'></div>
-			<div id='stick3'class='header-hamburgerIcon-stick'></div>
+			<div id='stick2' class='header-hamburgerIcon-stick'></div>
+			<div id='stick3' class='header-hamburgerIcon-stick'></div>
 		</div>
-		<a class='header-logo' href='index.html'><img src='./assets/LOGOtransparent.png' class='header-logo-image' /></a>
+		<a class='header-logo' href='index.html'><img src='./assets/LOGOtransparent.webp' alt='glasses image' class='header-logo-image' /></a>
 		<ul class='header-desktopMenu'>
-			<a class='header-desktopMenu-link' href='#doctor' onClick='onHamburgerClick()'>
-				<li class='header-desktopMenu-link-li' style='animation-delay:0s;'>Специалисты</li>
-			</a>
-			<a class='header-desktopMenu-link' href='#equipment' onClick='onHamburgerClick()'>
-				<li class='header-desktopMenu-link-li' style='animation-delay:0.05s;'>Оборудование</li>
-			</a>
-			<a class='header-desktopMenu-link' href='#price' onClick='onHamburgerClick()'>
-				<li class='header-desktopMenu-link-li' style='animation-delay:0.1s;'>Услуги и цены</li>
-			</a>
+			<li class='header-desktopMenu-li' onClick='onHamburgerClick()'>
+				<a href='#doctor' class='header-desktopMenu-li-link' style='animation-delay:0s;'>Специалисты</a>
+			</li>
+			<li class='header-desktopMenu-li' onClick='onHamburgerClick()'>
+				<a href='#equipment' class='header-desktopMenu-li-link' style='animation-delay:0.05s;'>Оборудование</a>
+			</li>
+			<li class='header-desktopMenu-li' onClick='onHamburgerClick()'>
+				<a href='#price' class='header-desktopMenu-li-link' style='animation-delay:0.1s;'>Услуги и цены</a>
+			</li>
 <!--
-			<a class='header-desktopMenu-link' href='#' onClick='onHamburgerClick()'>
-				<li class='header-desktopMenu-link-li' style='animation-delay:0.15s;'>Товары</li>
-			</a>
-			<a class='header-desktopMenu-link' href='#' onClick='onHamburgerClick()'>
-				<li class='header-desktopMenu-link-li' style='animation-delay:0.15s;'>Отзывы</li>
-			</a>
+			<li class='header-desktopMenu-li' onClick='onHamburgerClick()'>
+				<a href='#' class='header-desktopMenu-li-link' style='animation-delay:0.15s;'>Товары</a>
+			</li>
+			<li class='header-desktopMenu-li' onClick='onHamburgerClick()'>
+				<a href='#' class='header-desktopMenu-li-link' style='animation-delay:0.15s;'>Отзывы</a>
+			</li>
 -->
-			<a class='header-desktopMenu-link' href='#contacts' onClick='onHamburgerClick()'>
-				<li class='header-desktopMenu-link-li' style='animation-delay:0.2s;'>Контакты</li>
-			</a>
+			<li class='header-desktopMenu-li' onClick='onHamburgerClick()'>
+				<a href='#contacts' class='header-desktopMenu-li-link' style='animation-delay:0.2s;'>Контакты</a>
+			</li>
 		</ul>
 		<div class='header-zaglushka'></div>
 	</header>
 	<main>
 		<div class='hero'>
 			<div class='hero-textBlock'>
-				<h1 class='hero-text-block-mainTitle'>Центр</br>Зрения</h1>
+				<h1 style='display:none'>Офтальмолог в городе Боровичи</h1>
+				<p class='hero-text-block-mainTitle'>Центр<br></br>Зрения</p>
 				<p class='hero-text-block-adding'>Лучшее для ваших глаз</p>
 			</div>
 			<div class='hero-banner'>
@@ -84,7 +86,7 @@
 				<div class='doctor-container-photo doctor-container-item'>
 					<p class='doctor-container-title'>Врач-офтальмолог</p>
 					<p class='doctor-container-title'>Ханнанова Анна Николаевна</p>
-					<img src='./assets/anna.webp' class='doctor-container-photo-image' />
+					<img src='./assets/anna.webp' alt='doctor image' class='doctor-container-photo-image' />
 				</div>
 				<div class='doctor-container-education doctor-container-item'>
 					<p class='doctor-container-title'>Образование</p>
@@ -120,7 +122,7 @@
 			<h2>Оборудование</h2>
 			<div class='equipment-flex'>
 				<div class='equipment-flex-container'>
-					<div class='equipment-flex-container-imageContainer'><img src='./assets/proektor.webp' class='equipment-flex-container-image' /></div>
+					<div class='equipment-flex-container-imageContainer'><img src='./assets/proektor.webp' alt='proektor image' class='equipment-flex-container-image' /></div>
 					<div class='equipment-flex-container-info'>
 						<p class='equipment-flex-container-info-title'>Проектор знаков</p>
 						<div class='equipment-flex-container-info-text'>
@@ -129,7 +131,7 @@
 					</div>
 				</div>
 				<div class='equipment-flex-container equipment-flex-container-odd'>
-					<div class='equipment-flex-container-imageContainer'><img src='./assets/avtorefraktometr.webp' class='equipment-flex-container-image equipment-flex-container-image-odd' /></div>
+					<div class='equipment-flex-container-imageContainer'><img src='./assets/avtorefraktometr.webp' alt='avtorefraktometr image' class='equipment-flex-container-image equipment-flex-container-image-odd' /></div>
 					<div class='equipment-flex-container-info'>
 						<p class='equipment-flex-container-info-title equipment-flex-container-info-title-odd'>Авторефрактометр</p>
 						<div class='equipment-flex-container-info-text'>
@@ -138,7 +140,7 @@
 					</div>
 				</div>
 				<div class='equipment-flex-container'>
-					<div class='equipment-flex-container-imageContainer'><img src='./assets/lampa.webp' class='equipment-flex-container-image' /></div>
+					<div class='equipment-flex-container-imageContainer'><img src='./assets/lampa.webp' alt='lampa image' class='equipment-flex-container-image' /></div>
 					<div class='equipment-flex-container-info'>
 						<p class='equipment-flex-container-info-title'>Щелевая лампа</p>
 						<div class='equipment-flex-container-info-text'>
@@ -147,7 +149,7 @@
 					</div>
 				</div>
 				<div class='equipment-flex-container equipment-flex-container-odd'>
-					<div class='equipment-flex-container-imageContainer'><img src='./assets/icare.webp' class='equipment-flex-container-image equipment-flex-container-image-odd' /></div>
+					<div class='equipment-flex-container-imageContainer'><img src='./assets/icare.webp' alt='icare image' class='equipment-flex-container-image equipment-flex-container-image-odd' /></div>
 					<div class='equipment-flex-container-info'>
 						<p class='equipment-flex-container-info-title  equipment-flex-container-info-title-odd'>Icare</p>
 						<div class='equipment-flex-container-info-text'>
@@ -156,11 +158,20 @@
 					</div>
 				</div>
 				<div class='equipment-flex-container'>
-					<div class='equipment-flex-container-imageContainer'><img src='./assets/UZI.webp' class='equipment-flex-container-image' /></div>
+					<div class='equipment-flex-container-imageContainer'><img src='./assets/UZI.webp' alt='uzi image' class='equipment-flex-container-image' /></div>
 					<div class='equipment-flex-container-info'>
 						<p class='equipment-flex-container-info-title'>УЗИ</p>
 						<div class='equipment-flex-container-info-text'>
 							Это безопасный, эффективный и информативный метод, который практикуют офтальмологи. С его помощью изучаются малейшие изменения в глазном яблоке, оценивается структура мышц, определяются патологические формирования.
+						</div>
+					</div>
+				</div>
+				<div class='equipment-flex-container equipment-flex-container-odd'>
+					<div class='equipment-flex-container-imageContainer'><img src='./assets/dioptrimetr.webp' alt='dioptrimetr' class='equipment-flex-container-image equipment-flex-container-image-odd' /></div>
+					<div class='equipment-flex-container-info'>
+						<p class='equipment-flex-container-info-title  equipment-flex-container-info-title-odd'>Диоптриметр</p>
+						<div class='equipment-flex-container-info-text'>
+							Компьютерный прибор для определения оптической силы очковых линз и правильности изготовления очков. Данный прибор последнего поколения способен автоматически распознать прогрессивный дизайн линз и измерить межцентровое расстояние очков, что является дополнительным контролем точности выполнения рецепта.
 						</div>
 					</div>
 				</div>
@@ -201,25 +212,72 @@
 					<p class='price-container-value'>800 руб.</p>
 			</div>
 		</div>
+<!--		<div id='reviews' class='reviews'>
+			<h2>Отзывы</h2>
+			<div class='reviews-flexContainer'>
+				<div class='reviews-flexContainer-card'>
+					<div class='reviews-flexContainer-card-mainInfo'>
+						<p class='reviews-flexContainer-card-mainInfo-name'>Галина Устимова</p>
+						<div class='reviews-flexContainer-card-mainInfo-rateBlock'>
+							<div class='reviews-flexContainer-card-mainInfo-rateBlock-rate'>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+<!-- Creator: CorelDRAW X6 -->
+<!--<svg class='reviews-flexContainer-card-mainInfo-rateBlock-rate-star' xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 500 500"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#303030;stroke-width:10;stroke-linejoin:round}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="250.617" y1="35.802" x2="250.617" y2="401.488">
+   <stop offset="0" style="stop-color:#ff0"/>
+   <stop offset="1" style="stop-color:#ff0"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="250,41 314,184 470,201 353,306 386,459 250,381 114,459 147,306 30,201 186,184 "/>
+ </g>
+</svg>
+							</div>
+							<div class='reviews-flexContainer-card-mainInfo-rateBlock-date'>21 марта 2024</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div> -->
 		<div id='contacts' class='contacts'>
 			<h2>Контакты</h2>
 			<div class='contacts-container'>
 				<div class='contacts-container-tel'>
 					<p>Телефон для записи на прием:</p>
 					<a href='tel:+79217382512'>+79217382512</a>
-					<a href='tel:+79217382512'><button class='contacts-container-button'>Записаться на прием</button></a>
+					<a href='tel:+79217382512'><div class='contacts-container-button'>Записаться на прием</div></a>
 				</div>
 				<div class='contacts-container-map'>
 					<div class="map">
-						<div style="position:relative;overflow:hidden; width:100%; height:100%;">
-							<a href="https://yandex.ru/maps/10906/borovichy/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Боровичи</a>
-							<a href="https://yandex.ru/maps/10906/borovichy/house/ulitsa_9_yanvarya_15/Z0oYfwZjTUQDQFtifX94cXhqZg==/?ll=33.913461%2C58.390464&utm_medium=mapframe&utm_source=maps&z=19.13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица 9 Января, 15 — Яндекс Карты</a>
-							<iframe src="https://yandex.ru/map-widget/v1/-/CCUJeVVYKA" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-						</div>
+						<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=64643485939" width="100%" height="100%" frameborder="0"></iframe>
 					</div>
 					<div class='contacts-container-map-textBlock'>
 						<h3 class='contacts-container-map-textBlock-title'>Как нас найти</h3>
-						<p class='contacts-container-map-textBlock-text'>г. Боровичи, ул. 9 января, 15<br></br>(напротив дома молодежи, вход в арку)</p>
+						<p class='contacts-container-map-textBlock-text'>г. Боровичи, ул. 9 января, 15<br/>(напротив дома молодежи, вход в арку)</p>
+					</div>
+					<div class='contacts-container-map-openingHours'>
+						<h3 class='contacts-container-map-openingHours-title'>Часы работы</h3>
+						<ul class='contacts-container-map-openingHours-ul'>
+							<li class='contacts-container-map-openingHours-ul-li'>Пн: 10:00 - 17:00</li>
+							<li class='contacts-container-map-openingHours-ul-li'>Вт: 10:00 - 17:00</li>
+							<li class='contacts-container-map-openingHours-ul-li'>Ср: 10:00 - 17:00</li>
+							<li class='contacts-container-map-openingHours-ul-li'>Чт: 10:00 - 17:00</li>
+							<li class='contacts-container-map-openingHours-ul-li'>Пт: 10:00 - 17:00</li>
+							<li class='contacts-container-map-openingHours-ul-li'>Сб: ВЫХОДНОЙ</li>
+							<li class='contacts-container-map-openingHours-ul-li'>Вс: ВЫХОДНОЙ</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -280,7 +338,7 @@
 			<p>ОГРНИП 322530000015254</p>
 		</div>
 	</footer>
-	<script src='js/hamburger.js'></script>
-	<script src='js/main.js'></script>
+	<script type="text/javascript" src='js/hamburger.js'></script>
+	<script type="text/javascript" src='js/main.js'></script>
 </body>
 </html>

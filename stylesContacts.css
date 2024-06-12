@@ -74,26 +74,85 @@
 	display:flex;
 	flex-flow:row wrap;
 	justify-content:center;
-	align-items:flex-start;
+	align-items:stretch;
+	align-content:flex-start;
 	gap:50px;
 }
 
 .map{
-	width:500px;
+	width:min(500px, 100%);
 	height:300px;
+	box-shadow: 3px -3px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .contacts-container-map-textBlock{
-	width:500px;
+	width:fit-content;
 	height:auto;
+	background:#fff;
+	padding:10px;
+	box-shadow: 3px -3px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .contacts-container-map-textBlock-title{
-	font-size:30px;
+	color:#000;
+	font-size:2rem;
+	font-weight:500;
 }
 
 .contacts-container-map-textBlock-text{
 	margin:10px 0 0 0;
+	padding:10px 10px 10px 30px;
+	width:auto;
+	height:auto;
+	background:var(--mainBackground);
+	box-shadow: inset 3px -3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contacts-container-map-openingHours{
+	width:fit-content;
+	height:auto;
+	background:#fff;
+	padding:10px;
+	box-shadow: 3px -3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contacts-container-map-openingHours-title{
+	color:#000;
+	font-size:2rem;
+	font-weight:500;
+}
+
+.contacts-container-map-openingHours-ul{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+	gap:10px;
+	margin:10px 0 0 0;
+	padding:10px 10px 10px 30px;
+	background:var(--mainBackground);
+	box-shadow: inset 3px -3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contacts-container-map-openingHours-ul-li{
+	position:relative;
+	padding:0 0 0 20px;
+	
+}
+
+.contacts-container-map-openingHours-ul-li:before{
+	display:block;
+	content:'';
+	height:10px;
+	aspect-ratio:1/1;
+	background:linear-gradient(45deg, transparent 30%, var(--mainFontColor) 100%);
+	position:absolute;
+	top:50%;
+	left:0;
+	rotate:45deg;
+	translate:0% -50%;
 }
 
 @media(max-width:600px){
@@ -102,8 +161,5 @@
 	}
 	.contacts-container-tel{
 		justify-content:center;
-	}
-	.map{
-		width:280px;
 	}
 }

@@ -80,7 +80,7 @@ header{
 	position:relative;
 	transition:var(--mainTransition);
 }
-.header-desktopMenu-link{
+.header-desktopMenu-li{
 	position:relative;
 	width:auto;
 	height:30px;
@@ -91,7 +91,7 @@ header{
 	transition:0.3s;
 }
 
-.header-desktopMenu-link:before{
+.header-desktopMenu-li:before{
 	content:'';
 	position:absolute;
 	top:50%;
@@ -105,7 +105,7 @@ header{
 	opacity:0;
 }
 
-.header-desktopMenu-link:after{
+.header-desktopMenu-li:after{
 	content:'';
 	position:absolute;
 	top:50%;
@@ -119,14 +119,14 @@ header{
 	opacity:0;
 }
 
-.header-desktopMenu-link:hover:before{
+.header-desktopMenu-li:hover:before{
 	top:100%;
 	left:0;
 	opacity:1;
 	transition:0.3s;
 }
 
-.header-desktopMenu-link:hover:after{
+.header-desktopMenu-li:hover:after{
 	top:0;
 	left:100%;
 	opacity:1;
@@ -134,7 +134,7 @@ header{
 }
 
 
-.header-desktopMenu-link-li{
+.header-desktopMenu-li-link{
 	font:inter;
 	font-size:16px;
 	font-weight:600;
@@ -172,7 +172,7 @@ header{
 		translate:-100% 0%;
 		
 	}
-	.header-desktopMenu-link-li{
+	.header-desktopMenu-li-link{
 		font-size:2rem;
 		color:var(--mainBackground);
 	}

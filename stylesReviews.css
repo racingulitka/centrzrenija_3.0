@@ -1,0 +1,68 @@
+﻿.reviews{
+	padding:50px 50px 100px;
+	width:100%;
+	height:auto;
+	position:relative;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+	gap:100px;
+}
+
+.reviews-flexContainer{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:flex-start;
+	gap:15px;
+}
+
+.reviews-flexContainer-card{
+	width:400px;
+	height:auto;
+	padding:10px;
+	background:var(--mainFontColor);
+	border-radius:5px;
+}
+
+.reviews-flexContainer-card-mainInfo{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+
+.reviews-flexContainer-card-mainInfo-name{
+	font-size:30px;
+	color:#111;
+}
+
+.reviews-flexContainer-card-mainInfo-rateBlock{
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+	gap:10px;
+}
+
+.reviews-flexContainer-card-mainInfo-rateBlock-rate{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:flex-start;
+	align-items:center;
+	gap:5px;
+}
+
+.reviews-flexContainer-card-mainInfo-rateBlock-rate-star{
+	width:20px;
+	height:auto;
+}
+
+.reviews-flexContainer-card-mainInfo-rateBlock-date{
+	color:#111;
+}
