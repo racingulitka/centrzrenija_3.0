@@ -48,6 +48,7 @@
 	justify-content:flex-start;
 	align-items:flex-start;
 	gap:10px;
+	padding:10px 0 0 0;
 }
 
 .reviews-flexContainer-card-mainInfo-rateBlock-rate{
@@ -65,4 +66,26 @@
 
 .reviews-flexContainer-card-mainInfo-rateBlock-date{
 	color:#111;
+}
+
+.reviews-flexContainer-card-text{
+	margin:10px 0 0 0;
+	width:100%;
+	height:auto;
+	color:#000;
+}
+
+@media(max-width:500px){
+	.reviews{
+		padding:50px 10px;
+	}
+}
+
+@media(max-width:360px){
+	.reviews-flexContainer-card-mainInfo{
+		flex-flow:column nowrap;
+	}
+	.reviews-flexContainer-card-mainInfo-name{
+		font-size:24px;
+	}
 }
