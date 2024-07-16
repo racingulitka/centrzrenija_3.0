@@ -1,0 +1,37 @@
+﻿.priceDetails_main{
+	margin:100px 0 50px 0;
+	position:relative;
+	display:block;
+	padding:0 10px;
+}
+
+.priceDetails_h2{
+	color:var(--mainHeaderColor);
+	font-size:32px;
+    	font-family: 'SpaceAge';
+	opacity:1;
+	position:static;
+	translate: 0 0;
+	margin:20px 0 50px 0;
+}
+
+.priceDetails_p{
+	font-size:22px;
+	line-height:160%;
+	margin:0 0 10px 0;
+}
+
+.priceDetails_li{
+	font-size:22px;
+	line-height:160%;
+	list-style-position:inside;
+	list-style-type:auto;
+	padding:0 0 0 30px;
+	margin:0 0 10px 0;
+}
+
+@media(max-width:768px){
+	.priceDetails_h2{
+		font-size:8vw;
+	}
+}
